@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 
 const app = express();
 
-mongoose.connect('mongodb+srv://bobby:1234@cluster0-lc4fu.mongodb.net/test?retryWrites=true&w=majority');
+mongoose.connect('mongodb+srv://bobby:1234@cluster0-lc4fu.mongodb.net/graphql?retryWrites=true&w=majority');
 mongoose.connection.once('open', () => {
     console.log('connected');
 });
